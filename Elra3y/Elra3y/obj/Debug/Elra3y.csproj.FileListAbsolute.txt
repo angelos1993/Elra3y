@@ -1,0 +1,17 @@
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.Properties.Resources.resources
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.csproj.GenerateResource.Cache
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\bin\Debug\Elra3y.exe.config
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\bin\Debug\Elra3y.exe
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\bin\Debug\Elra3y.pdb
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\bin\Debug\DevComponents.DotNetBar2.dll
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\bin\Debug\DevComponents.Instrumentation.dll
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\bin\Debug\DevComponents.TreeGX.dll
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\bin\Debug\EntityFramework.dll
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\bin\Debug\EntityFramework.SqlServer.dll
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\bin\Debug\DevComponents.DotNetBar2.xml
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\bin\Debug\DevComponents.Instrumentation.xml
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\bin\Debug\EntityFramework.xml
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\bin\Debug\EntityFramework.SqlServer.xml
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmIndex.resources
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.exe
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.pdb
