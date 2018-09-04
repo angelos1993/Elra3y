@@ -15,3 +15,4 @@ G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\bin\Debug\EntityFramework.SqlServer.xml
 G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmIndex.resources
 G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.exe
 G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.pdb
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.csprojResolveAssemblyReference.cache
