@@ -24,6 +24,8 @@ namespace Elra3y.PL.Forms
         private CategoryManager CategoryManager => _categoryManager ?? (_categoryManager = new CategoryManager());
         private ItemManager _itemManager;
         private ItemManager ItemManager => _itemManager ?? (_itemManager = new ItemManager());
+        private PurchaseManager _purchaseManager;
+        private PurchaseManager PurchaseManager => _purchaseManager ?? (_purchaseManager = new PurchaseManager());
 
         #endregion
 
@@ -91,9 +93,17 @@ namespace Elra3y.PL.Forms
             }
             if (!isFormValid)
                 return;
-            var item = ItemManager.GetItemById(int.Parse(cmbItems.SelectedValue.ToString()));
-            item.Count += intInCount.Value;
+            var selectedItemId = int.Parse(cmbItems.SelectedValue.ToString());
+            var addedCount = intInCount.Value;
+            var item = ItemManager.GetItemById(selectedItemId);
+            item.Count += addedCount;
             ItemManager.UpdateItem(item);
+            PurchaseManager.AddNewPurchase(new Purchase
+            {
+                Date = DateTime.Now,
+                ItemId = selectedItemId,
+                Count = addedCount
+            });
             ShowInfoMsg(Resources.ItemCountAddesSuccessfully);
         }
 

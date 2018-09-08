@@ -25,3 +25,4 @@ G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmIncreaseItemCo
 G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmItems.resources
 G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmSales.resources
 G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.csprojResolveAssemblyReference.cache
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmRequiredItems.resources

@@ -49,5 +49,12 @@ namespace Elra3y.BLL
             item.Count -= count;
             UpdateItem(item);
         }
+
+        public List<RequiredItemVm> GetRequiredItems()
+        {
+            return UnitOfWork.ItemRepository.Get(item => item.Count <= 1).OrderBy(item => item.Code)
+                .ThenBy(item => item.Name)
+                .Select(item => new RequiredItemVm {ItemName = item.Name, CurrentCount = item.Count}).ToList();
+        }
     }
 }

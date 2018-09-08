@@ -66,6 +66,15 @@ namespace Elra3y.PL.Forms
 
         #endregion
 
+        #region Required
+
+        private void btnRequiredItems_Click(object sender, System.EventArgs e)
+        {
+            new FrmRequiredItems().ShowDialog();
+        }
+
+        #endregion
+
         #endregion
 
         #region Methods

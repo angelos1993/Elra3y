@@ -110,6 +110,7 @@
     <Compile Include="DAL\Repositories\SaleRepository.cs" />
     <Compile Include="DAL\VMs\CategoryVm.cs" />
     <Compile Include="DAL\VMs\ItemVm.cs" />
+    <Compile Include="DAL\VMs\RequiredItemVm.cs" />
     <Compile Include="DAL\VMs\SaleVm.cs" />
     <Compile Include="PL\Forms\FrmAddCategory.cs">
       <SubType>Form</SubType>
@@ -159,6 +160,12 @@
     <Compile Include="PL\Forms\FrmMaster.Designer.cs">
       <DependentUpon>FrmMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\Forms\FrmRequiredItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\FrmRequiredItems.Designer.cs">
+      <DependentUpon>FrmRequiredItems.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\Forms\FrmSales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Forms\FrmMaster.resx">
       <DependentUpon>FrmMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\FrmRequiredItems.resx">
+      <DependentUpon>FrmRequiredItems.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Forms\FrmSales.resx">
       <DependentUpon>FrmSales.cs</DependentUpon>
@@ -254,6 +264,7 @@
     </Content>
     <Content Include="Resources\Accessories.png" />
     <Content Include="Resources\Add.png" />
+    <None Include="Resources\Alert.png" />
     <Content Include="Resources\Categories.png" />
     <Content Include="Resources\Edit.png" />
     <Content Include="Resources\Exit.png" />
