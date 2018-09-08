@@ -18,6 +18,11 @@ namespace Elra3y.BLL
             return UnitOfWork.ItemRepository.GetById(itemId);
         }
 
+        public List<Item> GetAllItemsKeyValuePairs()
+        {
+            return UnitOfWork.ItemRepository.GetAll().ToList();
+        }
+
         public List<ItemVm> GetAllItemsVmsOrderedByName()
         {
             return UnitOfWork.ItemRepository.GetAll().OrderBy(item => item.Name).Select(item => new ItemVm

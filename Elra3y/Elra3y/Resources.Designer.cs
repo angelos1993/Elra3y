@@ -88,6 +88,15 @@ namespace Elra3y {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to تم إضافة الكمية بنجاح.
+        /// </summary>
+        public static string ItemCountAddesSuccessfully {
+            get {
+                return ResourceManager.GetString("ItemCountAddesSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to تم تعديل الصنف بنجاح.
         /// </summary>
         public static string ItemUpdatedSuccessfully {

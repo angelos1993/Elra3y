@@ -126,6 +126,9 @@
   <data name="ItemAddedSuccessfully" xml:space="preserve">
     <value>تم إضافة الصنف بنجاح</value>
   </data>
+  <data name="ItemCountAddesSuccessfully" xml:space="preserve">
+    <value>تم إضافة الكمية بنجاح</value>
+  </data>
   <data name="ItemUpdatedSuccessfully" xml:space="preserve">
     <value>تم تعديل الصنف بنجاح</value>
   </data>
