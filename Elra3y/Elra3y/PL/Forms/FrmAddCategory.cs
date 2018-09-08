@@ -34,7 +34,6 @@ namespace Elra3y.PL.Forms
         {
             Cursor = Cursors.WaitCursor;
             SaveCategory();
-            Close();
             Cursor = Cursors.Default;
         }
 
@@ -74,6 +73,7 @@ namespace Elra3y.PL.Forms
                 CategoryManager.AddNewCategory(category);
                 ShowInfoMsg(Resources.CategoryAddedSuccessfully);
             }
+            Close();
         }
 
         #endregion

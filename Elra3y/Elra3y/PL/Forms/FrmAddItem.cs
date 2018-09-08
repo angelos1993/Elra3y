@@ -44,7 +44,6 @@ namespace Elra3y.PL.Forms
         {
             Cursor = Cursors.WaitCursor;
             SaveItem();
-            Close();
             Cursor = Cursors.Default;
         }
 
@@ -141,6 +140,7 @@ namespace Elra3y.PL.Forms
                 ItemManager.AddNewItem(item);
                 ShowInfoMsg(Resources.ItemAddedSuccessfully);
             }
+            Close();
         }
 
         #endregion

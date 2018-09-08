@@ -55,7 +55,6 @@ namespace Elra3y.PL.Forms
         {
             Cursor = Cursors.WaitCursor;
             Save();
-            Close();
             Cursor = Cursors.Default;
         }
 
@@ -105,6 +104,7 @@ namespace Elra3y.PL.Forms
                 Count = addedCount
             });
             ShowInfoMsg(Resources.ItemCountAddesSuccessfully);
+            Close();
         }
 
         #endregion

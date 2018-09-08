@@ -44,6 +44,7 @@
             this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnRequiredItems = new DevComponents.DotNetBar.ButtonX();
+            this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupPanel2.SuspendLayout();
@@ -62,7 +63,7 @@
             this.groupPanel1.Controls.Add(this.pictureBox3);
             this.groupPanel1.Controls.Add(this.btnListSales);
             this.groupPanel1.Controls.Add(this.btnNewSale);
-            this.groupPanel1.Location = new System.Drawing.Point(518, 14);
+            this.groupPanel1.Location = new System.Drawing.Point(606, 14);
             this.groupPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupPanel1.Name = "groupPanel1";
             this.groupPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -148,7 +149,7 @@
             this.groupPanel2.Controls.Add(this.pictureBox1);
             this.groupPanel2.Controls.Add(this.btnListCategories);
             this.groupPanel2.Controls.Add(this.btnAddCategory);
-            this.groupPanel2.Location = new System.Drawing.Point(518, 249);
+            this.groupPanel2.Location = new System.Drawing.Point(606, 249);
             this.groupPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupPanel2.Name = "groupPanel2";
             this.groupPanel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -235,7 +236,7 @@
             this.groupPanel3.Controls.Add(this.btnListItems);
             this.groupPanel3.Controls.Add(this.btnAddItem);
             this.groupPanel3.Controls.Add(this.pictureBox2);
-            this.groupPanel3.Location = new System.Drawing.Point(93, 249);
+            this.groupPanel3.Location = new System.Drawing.Point(181, 249);
             this.groupPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupPanel3.Name = "groupPanel3";
             this.groupPanel3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -334,7 +335,7 @@
             this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel4.Controls.Add(this.pictureBox4);
             this.groupPanel4.Controls.Add(this.btnRequiredItems);
-            this.groupPanel4.Location = new System.Drawing.Point(93, 14);
+            this.groupPanel4.Location = new System.Drawing.Point(181, 14);
             this.groupPanel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupPanel4.Name = "groupPanel4";
             this.groupPanel4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -398,11 +399,25 @@
             this.btnRequiredItems.Text = "الأصناف المنتهية";
             this.btnRequiredItems.Click += new System.EventHandler(this.btnRequiredItems_Click);
             // 
+            // reflectionLabel1
+            // 
+            // 
+            // 
+            // 
+            this.reflectionLabel1.BackgroundStyle.Class = "";
+            this.reflectionLabel1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.reflectionLabel1.Location = new System.Drawing.Point(12, 73);
+            this.reflectionLabel1.Name = "reflectionLabel1";
+            this.reflectionLabel1.Size = new System.Drawing.Size(155, 135);
+            this.reflectionLabel1.TabIndex = 4;
+            this.reflectionLabel1.Text = "<b><font size=\"+30\"><font color=\"#B02B2C\">الراعي</font></font></b>";
+            // 
             // FrmIndex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 507);
+            this.ClientSize = new System.Drawing.Size(1036, 507);
+            this.Controls.Add(this.reflectionLabel1);
             this.Controls.Add(this.groupPanel4);
             this.Controls.Add(this.groupPanel3);
             this.Controls.Add(this.groupPanel2);
@@ -444,5 +459,6 @@
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel4;
         private System.Windows.Forms.PictureBox pictureBox4;
         private DevComponents.DotNetBar.ButtonX btnRequiredItems;
+        private DevComponents.DotNetBar.Controls.ReflectionLabel reflectionLabel1;
     }
 }

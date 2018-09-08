@@ -40,6 +40,11 @@ namespace Elra3y.PL.Forms
             Cursor = Cursors.Default;
         }
 
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
         #endregion
 
         #region Methods
