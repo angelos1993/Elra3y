@@ -2,6 +2,7 @@
 using Elra3y.BLL;
 using Elra3y.DAL.Model;
 using Elra3y.Utility;
+using static Elra3y.Utility.MessageBoxUtility;
 
 namespace Elra3y.PL.Forms
 {
@@ -64,9 +65,15 @@ namespace Elra3y.PL.Forms
             }
             var category = new Category {Name = txtName.Text.FullTrim()};
             if (IsEditMode)
+            {
                 CategoryManager.UpdateCategory(category);
+                ShowInfoMsg(Resources.CategoryUpdatedSuccessfully);
+            }
             else
+            {
                 CategoryManager.AddNewCategory(category);
+                ShowInfoMsg(Resources.CategoryAddedSuccessfully);
+            }
         }
 
         #endregion

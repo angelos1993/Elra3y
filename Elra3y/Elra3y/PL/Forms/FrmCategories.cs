@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Linq;
 using Elra3y.BLL;
-using Elra3y.DAL.VMs;
 
 namespace Elra3y.PL.Forms
 {
@@ -42,12 +40,7 @@ namespace Elra3y.PL.Forms
 
         private void LoadCategories()
         {
-            dgvCategories.DataSource = CategoryManager.GetAllCategories().OrderBy(category => category.Name)
-                .Select(category => new CategoryVm
-                {
-                    Id = category.Id,
-                    Name = category.Name
-                }).ToList();
+            dgvCategories.DataSource = CategoryManager.GetAllCategoriesVmsOrderedByName();
         }
 
         #endregion

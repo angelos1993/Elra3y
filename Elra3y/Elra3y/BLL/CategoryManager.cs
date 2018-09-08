@@ -2,6 +2,7 @@
 using System.Linq;
 using Elra3y.BLL.Infrastructure;
 using Elra3y.DAL.Model;
+using Elra3y.DAL.VMs;
 
 namespace Elra3y.BLL
 {
@@ -20,6 +21,16 @@ namespace Elra3y.BLL
         public List<Category> GetAllCategories()
         {
             return UnitOfWork.CategoryRepository.GetAll().ToList();
+        }
+
+        public List<CategoryVm> GetAllCategoriesVmsOrderedByName()
+        {
+            return UnitOfWork.CategoryRepository.GetAll().OrderBy(category => category.Name)
+                .Select(category => new CategoryVm
+                {
+                    Id = category.Id,
+                    Name = category.Name
+                }).ToList();
         }
 
         public void UpdateCategory(Category category)

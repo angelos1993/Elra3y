@@ -36,6 +36,7 @@
             // ErrorProvider
             // 
             this.ErrorProvider.ContainerControl = this;
+            this.ErrorProvider.RightToLeft = true;
             // 
             // FrmMaster
             // 

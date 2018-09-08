@@ -61,6 +61,42 @@ namespace Elra3y {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to تم إضافة الفئة بنجاح.
+        /// </summary>
+        public static string CategoryAddedSuccessfully {
+            get {
+                return ResourceManager.GetString("CategoryAddedSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم تعديل الفئة بنجاح.
+        /// </summary>
+        public static string CategoryUpdatedSuccessfully {
+            get {
+                return ResourceManager.GetString("CategoryUpdatedSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم إضافة الصنف بنجاح.
+        /// </summary>
+        public static string ItemAddedSuccessfully {
+            get {
+                return ResourceManager.GetString("ItemAddedSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم تعديل الصنف بنجاح.
+        /// </summary>
+        public static string ItemUpdatedSuccessfully {
+            get {
+                return ResourceManager.GetString("ItemUpdatedSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to هذا الحقل مطلوب.
         /// </summary>
         public static string RequiredValidation {
