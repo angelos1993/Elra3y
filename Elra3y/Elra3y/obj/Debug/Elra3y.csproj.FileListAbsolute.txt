@@ -15,4 +15,13 @@ G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\bin\Debug\EntityFramework.SqlServer.xml
 G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmIndex.resources
 G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.exe
 G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.pdb
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmAddCategory.resources
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmCategories.resources
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmMaster.resources
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.Resources.resources
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmAddItem.resources
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmAddSale.resources
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmIncreaseItemCount.resources
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmItems.resources
+G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmSales.resources
 G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.csprojResolveAssemblyReference.cache

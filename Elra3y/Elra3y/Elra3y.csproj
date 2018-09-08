@@ -108,11 +108,48 @@
     <Compile Include="DAL\Repositories\ItemRepository.cs" />
     <Compile Include="DAL\Repositories\PurchaseRepository.cs" />
     <Compile Include="DAL\Repositories\SaleRepository.cs" />
+    <Compile Include="DAL\VMs\CategoryVm.cs" />
+    <Compile Include="PL\Forms\FrmAddCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\FrmAddCategory.Designer.cs">
+      <DependentUpon>FrmAddCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\FrmAddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\FrmAddItem.Designer.cs">
+      <DependentUpon>FrmAddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\FrmAddSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\FrmAddSale.Designer.cs">
+      <DependentUpon>FrmAddSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\FrmCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\FrmCategories.Designer.cs">
+      <DependentUpon>FrmCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\FrmIncreaseItemCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\FrmIncreaseItemCount.Designer.cs">
+      <DependentUpon>FrmIncreaseItemCount.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\Forms\FrmIndex.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PL\Forms\FrmIndex.Designer.cs">
       <DependentUpon>FrmIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\FrmItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\FrmItems.Designer.cs">
+      <DependentUpon>FrmItems.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\Forms\FrmMaster.cs">
       <SubType>Form</SubType>
@@ -120,16 +157,51 @@
     <Compile Include="PL\Forms\FrmMaster.Designer.cs">
       <DependentUpon>FrmMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\Forms\FrmSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\FrmSales.Designer.cs">
+      <DependentUpon>FrmSales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Utility\Constants.cs" />
     <Compile Include="Utility\DateTimeExtensions.cs" />
     <Compile Include="Utility\InputLanguageUtility.cs" />
     <Compile Include="Utility\MessageBoxUtility.cs" />
     <Compile Include="Utility\StringExtensions.cs" />
     <Compile Include="Utility\Utility.cs" />
+    <EmbeddedResource Include="PL\Forms\FrmAddCategory.resx">
+      <DependentUpon>FrmAddCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\FrmAddItem.resx">
+      <DependentUpon>FrmAddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\FrmAddSale.resx">
+      <DependentUpon>FrmAddSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\FrmCategories.resx">
+      <DependentUpon>FrmCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\FrmIncreaseItemCount.resx">
+      <DependentUpon>FrmIncreaseItemCount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\Forms\FrmIndex.resx">
       <DependentUpon>FrmIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\FrmItems.resx">
+      <DependentUpon>FrmItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\FrmMaster.resx">
+      <DependentUpon>FrmMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\FrmSales.resx">
+      <DependentUpon>FrmSales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -141,6 +213,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EntityDeploy Include="DAL\Model\Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model.Designer.cs</LastGenOutput>
@@ -162,9 +238,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAL\VMs\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="DAL\Model\Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -181,6 +255,8 @@
     <Content Include="Resources\Categories.png" />
     <Content Include="Resources\Edit.png" />
     <Content Include="Resources\Exit.png" />
+    <None Include="Resources\Sale.png" />
+    <None Include="Resources\Purchase.png" />
     <None Include="Resources\IncreaseQuantity.png" />
     <Content Include="Resources\ListAll.png" />
     <Content Include="Resources\Save.png" />

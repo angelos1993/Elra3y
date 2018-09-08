@@ -1,6 +1,6 @@
 ﻿namespace Elra3y.PL.Forms
 {
-    partial class FrmMaster
+    partial class FrmSales
     {
         /// <summary>
         /// Required designer variable.
@@ -28,30 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
-            // ErrorProvider
+            // FrmSales
             // 
-            this.ErrorProvider.ContainerControl = this;
-            // 
-            // FrmMaster
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(426, 402);
             this.DoubleBuffered = true;
-            this.Name = "FrmMaster";
-            this.Text = "FrmMaster";
+            this.Name = "FrmSales";
+            this.Text = "المبيعات";
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        public System.Windows.Forms.ErrorProvider ErrorProvider;
     }
 }

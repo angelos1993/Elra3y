@@ -31,7 +31,6 @@ namespace Elra3y.PL.Forms
             ShowInTaskbar = false;
             Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular);
             AutoScaleMode = AutoScaleMode.Font;
-            RightToLeft = RightToLeft.Yes;
         }
 
         #endregion

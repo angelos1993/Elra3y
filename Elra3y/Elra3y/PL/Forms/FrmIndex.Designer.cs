@@ -29,19 +29,24 @@
         private void InitializeComponent()
         {
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnListSales = new DevComponents.DotNetBar.ButtonX();
+            this.btnNewSale = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnListCategories = new DevComponents.DotNetBar.ButtonX();
+            this.btnAddCategory = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnIncreaseItemCount = new DevComponents.DotNetBar.ButtonX();
             this.btnListItems = new DevComponents.DotNetBar.ButtonX();
             this.btnAddItem = new DevComponents.DotNetBar.ButtonX();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnListCategories = new DevComponents.DotNetBar.ButtonX();
-            this.btnAddCategory = new DevComponents.DotNetBar.ButtonX();
+            this.groupPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupPanel1
@@ -49,6 +54,9 @@
             this.groupPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.pictureBox3);
+            this.groupPanel1.Controls.Add(this.btnListSales);
+            this.groupPanel1.Controls.Add(this.btnNewSale);
             this.groupPanel1.Location = new System.Drawing.Point(518, 14);
             this.groupPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupPanel1.Name = "groupPanel1";
@@ -87,6 +95,45 @@
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel1.TabIndex = 0;
             this.groupPanel1.Text = "المبيعات";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::Elra3y.Properties.Resources.Sale;
+            this.pictureBox3.Location = new System.Drawing.Point(21, 49);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btnListSales
+            // 
+            this.btnListSales.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnListSales.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnListSales.Image = global::Elra3y.Properties.Resources.ListAll;
+            this.btnListSales.ImageFixedSize = new System.Drawing.Size(30, 30);
+            this.btnListSales.Location = new System.Drawing.Point(165, 100);
+            this.btnListSales.Name = "btnListSales";
+            this.btnListSales.Size = new System.Drawing.Size(225, 45);
+            this.btnListSales.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnListSales.TabIndex = 4;
+            this.btnListSales.Text = "عرض المبيعات";
+            this.btnListSales.Click += new System.EventHandler(this.btnListSales_Click);
+            // 
+            // btnNewSale
+            // 
+            this.btnNewSale.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnNewSale.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnNewSale.Image = global::Elra3y.Properties.Resources.Add;
+            this.btnNewSale.ImageFixedSize = new System.Drawing.Size(30, 30);
+            this.btnNewSale.Location = new System.Drawing.Point(165, 49);
+            this.btnNewSale.Name = "btnNewSale";
+            this.btnNewSale.Size = new System.Drawing.Size(225, 45);
+            this.btnNewSale.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnNewSale.TabIndex = 3;
+            this.btnNewSale.Text = "بيع جديد";
+            this.btnNewSale.Click += new System.EventHandler(this.btnNewSale_Click);
             // 
             // groupPanel2
             // 
@@ -134,6 +181,45 @@
             this.groupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel2.TabIndex = 1;
             this.groupPanel2.Text = "الفئات";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Elra3y.Properties.Resources.Categories;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 49);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnListCategories
+            // 
+            this.btnListCategories.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnListCategories.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnListCategories.Image = global::Elra3y.Properties.Resources.ListAll;
+            this.btnListCategories.ImageFixedSize = new System.Drawing.Size(30, 30);
+            this.btnListCategories.Location = new System.Drawing.Point(167, 100);
+            this.btnListCategories.Name = "btnListCategories";
+            this.btnListCategories.Size = new System.Drawing.Size(225, 45);
+            this.btnListCategories.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnListCategories.TabIndex = 1;
+            this.btnListCategories.Text = "عرض كل الفئات";
+            this.btnListCategories.Click += new System.EventHandler(this.btnListCategories_Click);
+            // 
+            // btnAddCategory
+            // 
+            this.btnAddCategory.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnAddCategory.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnAddCategory.Image = global::Elra3y.Properties.Resources.Add;
+            this.btnAddCategory.ImageFixedSize = new System.Drawing.Size(30, 30);
+            this.btnAddCategory.Location = new System.Drawing.Point(167, 49);
+            this.btnAddCategory.Name = "btnAddCategory";
+            this.btnAddCategory.Size = new System.Drawing.Size(225, 45);
+            this.btnAddCategory.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnAddCategory.TabIndex = 0;
+            this.btnAddCategory.Text = "إضافة فئة جديدة";
+            this.btnAddCategory.Click += new System.EventHandler(this.btnAddCategory_Click);
             // 
             // groupPanel3
             // 
@@ -195,6 +281,7 @@
             this.btnIncreaseItemCount.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnIncreaseItemCount.TabIndex = 6;
             this.btnIncreaseItemCount.Text = "إضافة كمية لصنف";
+            this.btnIncreaseItemCount.Click += new System.EventHandler(this.btnIncreaseItemCount_Click);
             // 
             // btnListItems
             // 
@@ -208,6 +295,7 @@
             this.btnListItems.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnListItems.TabIndex = 5;
             this.btnListItems.Text = "عرض كل الأصناف";
+            this.btnListItems.Click += new System.EventHandler(this.btnListItems_Click);
             // 
             // btnAddItem
             // 
@@ -221,6 +309,7 @@
             this.btnAddItem.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnAddItem.TabIndex = 4;
             this.btnAddItem.Text = "إضافة صنف جديد";
+            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
             // 
             // pictureBox2
             // 
@@ -232,43 +321,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Elra3y.Properties.Resources.Categories;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 49);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnListCategories
-            // 
-            this.btnListCategories.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnListCategories.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnListCategories.Image = global::Elra3y.Properties.Resources.ListAll;
-            this.btnListCategories.ImageFixedSize = new System.Drawing.Size(30, 30);
-            this.btnListCategories.Location = new System.Drawing.Point(167, 100);
-            this.btnListCategories.Name = "btnListCategories";
-            this.btnListCategories.Size = new System.Drawing.Size(225, 45);
-            this.btnListCategories.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnListCategories.TabIndex = 1;
-            this.btnListCategories.Text = "عرض كل الفئات";
-            // 
-            // btnAddCategory
-            // 
-            this.btnAddCategory.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnAddCategory.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnAddCategory.Image = global::Elra3y.Properties.Resources.Add;
-            this.btnAddCategory.ImageFixedSize = new System.Drawing.Size(30, 30);
-            this.btnAddCategory.Location = new System.Drawing.Point(167, 49);
-            this.btnAddCategory.Name = "btnAddCategory";
-            this.btnAddCategory.Size = new System.Drawing.Size(225, 45);
-            this.btnAddCategory.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnAddCategory.TabIndex = 0;
-            this.btnAddCategory.Text = "إضافة فئة جديدة";
             // 
             // FrmIndex
             // 
@@ -285,10 +337,12 @@
             this.Name = "FrmIndex";
             this.Text = "الراعي";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.groupPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -305,5 +359,8 @@
         private DevComponents.DotNetBar.ButtonX btnAddItem;
         private System.Windows.Forms.PictureBox pictureBox2;
         private DevComponents.DotNetBar.ButtonX btnIncreaseItemCount;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private DevComponents.DotNetBar.ButtonX btnListSales;
+        private DevComponents.DotNetBar.ButtonX btnNewSale;
     }
 }
