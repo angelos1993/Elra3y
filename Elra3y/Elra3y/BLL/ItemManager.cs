@@ -1,5 +1,8 @@
-﻿using Elra3y.BLL.Infrastructure;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Elra3y.BLL.Infrastructure;
 using Elra3y.DAL.Model;
+using Elra3y.DAL.VMs;
 
 namespace Elra3y.BLL
 {
@@ -13,6 +16,21 @@ namespace Elra3y.BLL
         public Item GetItemById(int itemId)
         {
             return UnitOfWork.ItemRepository.GetById(itemId);
+        }
+
+        public List<ItemVm> GetAllItemsVmsOrderedByName()
+        {
+            return UnitOfWork.ItemRepository.GetAll().OrderBy(item => item.Name).Select(item => new ItemVm
+            {
+                Id = item.Id,
+                Category = item.Category.Name,
+                Name = item.Name,
+                Code = item.Code,
+                ShortName = item.ShortName,
+                WholesalePrice = item.WholesalePrice,
+                SellingPrice = item.SellingPrice,
+                Count = item.Count
+            }).ToList();
         }
 
         public void UpdateItem(Item item)
