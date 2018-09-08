@@ -42,5 +42,12 @@ namespace Elra3y.BLL
         {
             UnitOfWork.ItemRepository.Update(item);
         }
+
+        public void DecreaseItemCount(int itemId, int count)
+        {
+            var item = GetItemById(itemId);
+            item.Count -= count;
+            UpdateItem(item);
+        }
     }
 }

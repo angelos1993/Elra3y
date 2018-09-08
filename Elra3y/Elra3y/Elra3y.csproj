@@ -110,6 +110,7 @@
     <Compile Include="DAL\Repositories\SaleRepository.cs" />
     <Compile Include="DAL\VMs\CategoryVm.cs" />
     <Compile Include="DAL\VMs\ItemVm.cs" />
+    <Compile Include="DAL\VMs\SaleVm.cs" />
     <Compile Include="PL\Forms\FrmAddCategory.cs">
       <SubType>Form</SubType>
     </Compile>

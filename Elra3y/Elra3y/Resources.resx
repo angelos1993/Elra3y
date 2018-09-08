@@ -135,4 +135,10 @@
   <data name="RequiredValidation" xml:space="preserve">
     <value>هذا الحقل مطلوب</value>
   </data>
+  <data name="SaleAddedSuccessfully" xml:space="preserve">
+    <value>تم حفظ عملية البيع بنجاح</value>
+  </data>
+  <data name="SaleCountNotAvailable" xml:space="preserve">
+    <value>لا توجد هذه الكمية من هذا الصنف</value>
+  </data>
 </root>

@@ -113,5 +113,23 @@ namespace Elra3y {
                 return ResourceManager.GetString("RequiredValidation", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم حفظ عملية البيع بنجاح.
+        /// </summary>
+        public static string SaleAddedSuccessfully {
+            get {
+                return ResourceManager.GetString("SaleAddedSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to لا توجد هذه الكمية من هذا الصنف.
+        /// </summary>
+        public static string SaleCountNotAvailable {
+            get {
+                return ResourceManager.GetString("SaleCountNotAvailable", resourceCulture);
+            }
+        }
     }
 }
