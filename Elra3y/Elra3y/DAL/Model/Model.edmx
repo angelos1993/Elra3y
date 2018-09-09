@@ -19,7 +19,6 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Code" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="ShortName" Type="nvarchar(max)" Nullable="false" />
           <Property Name="WholesalePrice" Type="decimal" Precision="18" Scale="2" Nullable="false" />
           <Property Name="SellingPrice" Type="decimal" Precision="18" Scale="2" Nullable="false" />
           <Property Name="Count" Type="int" Nullable="false" />
@@ -129,7 +128,6 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="ShortName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="WholesalePrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
           <Property Name="SellingPrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
           <Property Name="Count" Type="Int32" Nullable="false" />
@@ -244,7 +242,6 @@
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Code" ColumnName="Code" />
-                <ScalarProperty Name="ShortName" ColumnName="ShortName" />
                 <ScalarProperty Name="WholesalePrice" ColumnName="WholesalePrice" />
                 <ScalarProperty Name="SellingPrice" ColumnName="SellingPrice" />
                 <ScalarProperty Name="Count" ColumnName="Count" />

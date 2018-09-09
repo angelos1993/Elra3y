@@ -24,5 +24,4 @@ G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmAddSale.resour
 G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmIncreaseItemCount.resources
 G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmItems.resources
 G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmSales.resources
-G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.csprojResolveAssemblyReference.cache
 G:\Angelos\Elra3y\Repo\Elra3y\Elra3y\obj\Debug\Elra3y.PL.Forms.FrmRequiredItems.resources

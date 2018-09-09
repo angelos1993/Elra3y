@@ -31,7 +31,6 @@ namespace Elra3y.BLL
                 Category = item.Category.Name,
                 Name = item.Name,
                 Code = item.Code,
-                ShortName = item.ShortName,
                 WholesalePrice = item.WholesalePrice,
                 SellingPrice = item.SellingPrice,
                 Count = item.Count

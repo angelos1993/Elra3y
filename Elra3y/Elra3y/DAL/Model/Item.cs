@@ -24,7 +24,6 @@ namespace Elra3y.DAL.Model
         public int Id { get; set; }
         public string Name { get; set; }
         public string Code { get; set; }
-        public string ShortName { get; set; }
         public decimal WholesalePrice { get; set; }
         public decimal SellingPrice { get; set; }
         public int Count { get; set; }

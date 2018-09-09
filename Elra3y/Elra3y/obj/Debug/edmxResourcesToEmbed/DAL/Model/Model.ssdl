@@ -14,7 +14,6 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Code" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="ShortName" Type="nvarchar(max)" Nullable="false" />
     <Property Name="WholesalePrice" Type="decimal" Precision="18" Scale="2" Nullable="false" />
     <Property Name="SellingPrice" Type="decimal" Precision="18" Scale="2" Nullable="false" />
     <Property Name="Count" Type="int" Nullable="false" />

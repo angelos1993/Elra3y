@@ -72,7 +72,6 @@ namespace Elra3y.PL.Forms
             Item = ItemManager.GetItemById(itemId);
             cmbCaterories.SelectedValue = Item.CategoryId;
             txtName.Text = Item.Name;
-            txtShortName.Text = Item.ShortName;
             txtCode.Text = Item.Code;
             dblInWholesalePrice.Value = (double) Item.WholesalePrice;
             dblInSellingPrice.Value = (double) Item.SellingPrice;
@@ -91,11 +90,6 @@ namespace Elra3y.PL.Forms
             if (txtName.Text.FullTrim().IsNullOrEmptyOrWhiteSpace())
             {
                 ErrorProvider.SetError(txtName, Resources.RequiredValidation);
-                isFormValid = false;
-            }
-            if (txtShortName.Text.FullTrim().IsNullOrEmptyOrWhiteSpace())
-            {
-                ErrorProvider.SetError(txtShortName, Resources.RequiredValidation);
                 isFormValid = false;
             }
             if (txtCode.Text.FullTrim().IsNullOrEmptyOrWhiteSpace())
@@ -123,7 +117,6 @@ namespace Elra3y.PL.Forms
             var item = new Item
             {
                 Name = txtName.Text.FullTrim(),
-                ShortName = txtShortName.Text.FullTrim(),
                 Code = txtCode.Text.FullTrim(),
                 WholesalePrice = (decimal) dblInWholesalePrice.Value,
                 SellingPrice = (decimal) dblInSellingPrice.Value,

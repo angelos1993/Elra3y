@@ -15,10 +15,7 @@ namespace Elra3y.DAL.VMs
 
         [DisplayName("الكود")]
         public string Code { get; set; }
-
-        [DisplayName("الإختصار")]
-        public string ShortName { get; set; }
-
+        
         [DisplayName("السعر جملة")]
         public decimal WholesalePrice { get; set; }
 

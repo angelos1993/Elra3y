@@ -15,7 +15,6 @@
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Code" ColumnName="Code" />
-          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
           <ScalarProperty Name="WholesalePrice" ColumnName="WholesalePrice" />
           <ScalarProperty Name="SellingPrice" ColumnName="SellingPrice" />
           <ScalarProperty Name="Count" ColumnName="Count" />
