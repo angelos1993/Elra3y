@@ -49,11 +49,20 @@ namespace Elra3y.BLL
             UpdateItem(item);
         }
 
+        public IQueryable<Item> GetRequiredItemsQueryable()
+        {
+            return UnitOfWork.ItemRepository.Get(item => item.Count <= 1);
+        }
+
         public List<RequiredItemVm> GetRequiredItems()
         {
-            return UnitOfWork.ItemRepository.Get(item => item.Count <= 1).OrderBy(item => item.Code)
-                .ThenBy(item => item.Name)
+            return GetRequiredItemsQueryable().OrderBy(item => item.Code).ThenBy(item => item.Name)
                 .Select(item => new RequiredItemVm {ItemName = item.Name, CurrentCount = item.Count}).ToList();
+        }
+
+        public int GetRequiredItemsCount()
+        {
+            return GetRequiredItemsQueryable().Count();
         }
 
         public List<RequiredItemVm> SearchItemsByText(string text)

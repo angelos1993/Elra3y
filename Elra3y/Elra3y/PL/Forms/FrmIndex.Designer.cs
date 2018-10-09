@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnListSales = new DevComponents.DotNetBar.ButtonX();
@@ -49,6 +50,8 @@
             this.groupPanel5 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.txtSearch = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.dgvItemSearch = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.lblRequired = new DevComponents.DotNetBar.LabelX();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupPanel2.SuspendLayout();
@@ -339,6 +342,7 @@
             this.groupPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupPanel4.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel4.Controls.Add(this.lblRequired);
             this.groupPanel4.Controls.Add(this.pictureBox4);
             this.groupPanel4.Controls.Add(this.btnRequiredItems);
             this.groupPanel4.Location = new System.Drawing.Point(181, 14);
@@ -480,14 +484,14 @@
             // 
             this.dgvItemSearch.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvItemSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvItemSearch.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvItemSearch.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvItemSearch.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgvItemSearch.Location = new System.Drawing.Point(3, 3);
             this.dgvItemSearch.Name = "dgvItemSearch";
@@ -495,6 +499,29 @@
             this.dgvItemSearch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dgvItemSearch.Size = new System.Drawing.Size(411, 132);
             this.dgvItemSearch.TabIndex = 1;
+            // 
+            // lblRequired
+            // 
+            this.lblRequired.BackColor = System.Drawing.Color.Red;
+            // 
+            // 
+            // 
+            this.lblRequired.BackgroundStyle.Class = "";
+            this.lblRequired.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblRequired.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRequired.ForeColor = System.Drawing.Color.White;
+            this.lblRequired.Location = new System.Drawing.Point(261, 35);
+            this.lblRequired.Name = "lblRequired";
+            this.lblRequired.Size = new System.Drawing.Size(38, 28);
+            this.lblRequired.TabIndex = 6;
+            this.lblRequired.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.lblRequired.Visible = false;
+            // 
+            // timer
+            // 
+            this.timer.Enabled = true;
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // FrmIndex
             // 
@@ -550,5 +577,7 @@
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel5;
         private DevComponents.DotNetBar.Controls.DataGridViewX dgvItemSearch;
         private DevComponents.DotNetBar.Controls.TextBoxX txtSearch;
+        private DevComponents.DotNetBar.LabelX lblRequired;
+        private System.Windows.Forms.Timer timer;
     }
 }

@@ -93,6 +93,17 @@ namespace Elra3y.PL.Forms
 
         #endregion
 
+        #region Timer
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            var requiredItemsCount = ItemManager.GetRequiredItemsCount();
+            lblRequired.Text = requiredItemsCount.ToString();
+            lblRequired.Visible = requiredItemsCount > 0;
+        }
+
+        #endregion
+
         #endregion
 
         #region Methods
