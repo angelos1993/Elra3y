@@ -55,5 +55,11 @@ namespace Elra3y.BLL
                 .ThenBy(item => item.Name)
                 .Select(item => new RequiredItemVm {ItemName = item.Name, CurrentCount = item.Count}).ToList();
         }
+
+        public List<RequiredItemVm> SearchItemsByText(string text)
+        {
+            return UnitOfWork.ItemRepository.Get(item => item.Name.Contains(text))
+                .Select(item => new RequiredItemVm {ItemName = item.Name, CurrentCount = item.Count}).ToList();
+        }
     }
 }

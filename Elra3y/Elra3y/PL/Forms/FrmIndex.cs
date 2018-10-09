@@ -1,4 +1,7 @@
-﻿using DevComponents.DotNetBar;
+﻿using System;
+using DevComponents.DotNetBar;
+using Elra3y.BLL;
+using Elra3y.Utility;
 
 namespace Elra3y.PL.Forms
 {
@@ -15,18 +18,21 @@ namespace Elra3y.PL.Forms
 
         #region Properties
 
+        private ItemManager _itemManager;
+        private ItemManager ItemManager => _itemManager ?? (_itemManager = new ItemManager());
+
         #endregion
 
         #region Events
 
         #region Sales
 
-        private void btnNewSale_Click(object sender, System.EventArgs e)
+        private void btnNewSale_Click(object sender, EventArgs e)
         {
             new FrmAddSale().ShowDialog();
         }
 
-        private void btnListSales_Click(object sender, System.EventArgs e)
+        private void btnListSales_Click(object sender, EventArgs e)
         {
             new FrmSales().ShowDialog();
         }
@@ -35,12 +41,12 @@ namespace Elra3y.PL.Forms
 
         #region Categories
 
-        private void btnAddCategory_Click(object sender, System.EventArgs e)
+        private void btnAddCategory_Click(object sender, EventArgs e)
         {
             new FrmAddCategory().ShowDialog();
         }
 
-        private void btnListCategories_Click(object sender, System.EventArgs e)
+        private void btnListCategories_Click(object sender, EventArgs e)
         {
             new  FrmCategories().ShowDialog();
         }
@@ -49,17 +55,17 @@ namespace Elra3y.PL.Forms
 
         #region Items
 
-        private void btnAddItem_Click(object sender, System.EventArgs e)
+        private void btnAddItem_Click(object sender, EventArgs e)
         {
             new FrmAddItem().ShowDialog();
         }
 
-        private void btnListItems_Click(object sender, System.EventArgs e)
+        private void btnListItems_Click(object sender, EventArgs e)
         {
             new FrmItems().ShowDialog();
         }
 
-        private void btnIncreaseItemCount_Click(object sender, System.EventArgs e)
+        private void btnIncreaseItemCount_Click(object sender, EventArgs e)
         {
             new FrmIncreaseItemCount().ShowDialog();
         }
@@ -68,9 +74,21 @@ namespace Elra3y.PL.Forms
 
         #region Required
 
-        private void btnRequiredItems_Click(object sender, System.EventArgs e)
+        private void btnRequiredItems_Click(object sender, EventArgs e)
         {
             new FrmRequiredItems().ShowDialog();
+        }
+
+        #endregion
+
+        #region Search
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            var searchText = txtSearch.Text.FullTrim();
+            dgvItemSearch.DataSource = searchText.IsNullOrEmptyOrWhiteSpace()
+                ? null
+                : ItemManager.SearchItemsByText(searchText);
         }
 
         #endregion
