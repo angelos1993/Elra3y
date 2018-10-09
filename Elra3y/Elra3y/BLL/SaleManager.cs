@@ -5,6 +5,7 @@ using System.Linq;
 using Elra3y.BLL.Infrastructure;
 using Elra3y.DAL.Model;
 using Elra3y.DAL.VMs;
+using Elra3y.Utility;
 
 namespace Elra3y.BLL
 {
@@ -22,13 +23,14 @@ namespace Elra3y.BLL
             return itemAvailableCount >= count;
         }
 
-        public List<SaleVm> GetSalesByDate(DateTime dateTime)
+        public List<SaleVm> GetSalesByDate(DateTime fromDate, DateTime toDate)
         {
-            return UnitOfWork.SaleRepository.Get(sale => SqlFunctions.DateDiff("DAY", dateTime, sale.Date) == 0)
-                .ToList().Select(sale => new SaleVm
+            return UnitOfWork.SaleRepository.Get(sale => SqlFunctions.DateDiff("DAY", fromDate, sale.Date) >= 0 &&
+                                                         SqlFunctions.DateDiff("DAY", sale.Date, toDate) >= 0)
+                .OrderBy(sale => sale.Date).ToList().Select(sale => new SaleVm
                 {
                     Id = sale.Id,
-                    Date = sale.Date.ToShortDateString(),
+                    Date = sale.Date.ToCustomShortDateString(),
                     Item = sale.Item.Name,
                     Count = sale.Count,
                     Price = sale.Price

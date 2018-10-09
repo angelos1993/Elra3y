@@ -28,7 +28,7 @@ namespace Elra3y.PL.Forms
         private void FrmSales_Load(object sender, EventArgs e)
         {
             Cursor = Cursors.WaitCursor;
-            dtSaleDate.Value = DateTime.Now;
+            dtFrom.Value = dtTo.Value = DateTime.Now;
             FillGrid();
             Cursor = Cursors.Default;
         }
@@ -51,7 +51,7 @@ namespace Elra3y.PL.Forms
 
         private void FillGrid()
         {
-            var sales = SaleManager.GetSalesByDate(dtSaleDate.Value);
+            var sales = SaleManager.GetSalesByDate(dtFrom.Value, dtTo.Value);
             dgvSales.DataSource = sales;
             lblTotalSales.Text = $@"إجمالي المبيعات: {sales.Sum(sale => sale.Price)}";
         }

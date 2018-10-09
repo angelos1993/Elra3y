@@ -81,11 +81,6 @@ namespace Elra3y.PL.Forms
         {
             ErrorProvider.Clear();
             var isFormValid = true;
-            if (cmbItems.SelectedIndex <= 0)
-            {
-                ErrorProvider.SetError(cmbItems, Resources.RequiredValidation);
-                isFormValid = false;
-            }
             if (intInCount.Value <= 0)
             {
                 ErrorProvider.SetError(intInCount, Resources.RequiredValidation);
