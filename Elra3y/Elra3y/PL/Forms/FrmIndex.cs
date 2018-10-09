@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 using DevComponents.DotNetBar;
 using Elra3y.BLL;
 using Elra3y.Utility;
@@ -85,10 +86,12 @@ namespace Elra3y.PL.Forms
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
+            Cursor = Cursors.WaitCursor;
             var searchText = txtSearch.Text.FullTrim();
             dgvItemSearch.DataSource = searchText.IsNullOrEmptyOrWhiteSpace()
                 ? null
                 : ItemManager.SearchItemsByText(searchText);
+            Cursor = Cursors.Default;
         }
 
         #endregion
