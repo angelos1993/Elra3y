@@ -262,6 +262,9 @@
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
+    <Content Include="Deployment Versions\Nov 23, 2018\Elra3y.exe" />
+    <Content Include="Deployment Versions\Nov 23, 2018\Script.iss" />
+    <Content Include="Deployment Versions\Nov 23, 2018\Script.sql" />
     <Content Include="Deployment Versions\Oct 15, 2018\Elra3y.exe" />
     <Content Include="Deployment Versions\Oct 15, 2018\Script.iss" />
     <Content Include="Deployment Versions\Oct 5, 2018\Elra3y.exe" />
